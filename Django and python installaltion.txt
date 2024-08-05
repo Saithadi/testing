@@ -1,0 +1,108 @@
+Microsoft Windows [Version 10.0.22621.3447]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\ACER>python --version
+Python 3.12.4
+
+C:\Users\ACER>pip --version
+pip 24.0 from C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\pip (python 3.12)
+
+C:\Users\ACER>django-admin --version
+'django-admin' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ACER>pip install virtualenvwrapper-win
+Collecting virtualenvwrapper-win
+  Downloading virtualenvwrapper_win-1.2.7-py3-none-any.whl.metadata (10 kB)
+Collecting virtualenv (from virtualenvwrapper-win)
+  Downloading virtualenv-20.26.2-py3-none-any.whl.metadata (4.4 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv->virtualenvwrapper-win)
+  Downloading distlib-0.3.8-py2.py3-none-any.whl.metadata (5.1 kB)
+Collecting filelock<4,>=3.12.2 (from virtualenv->virtualenvwrapper-win)
+  Downloading filelock-3.15.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting platformdirs<5,>=3.9.1 (from virtualenv->virtualenvwrapper-win)
+  Downloading platformdirs-4.2.2-py3-none-any.whl.metadata (11 kB)
+Downloading virtualenvwrapper_win-1.2.7-py3-none-any.whl (18 kB)
+Downloading virtualenv-20.26.2-py3-none-any.whl (3.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 1.8 MB/s eta 0:00:00
+Downloading distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.9/468.9 kB 3.3 MB/s eta 0:00:00
+Downloading filelock-3.15.1-py3-none-any.whl (15 kB)
+Downloading platformdirs-4.2.2-py3-none-any.whl (18 kB)
+Installing collected packages: distlib, platformdirs, filelock, virtualenv, virtualenvwrapper-win
+Successfully installed distlib-0.3.8 filelock-3.15.1 platformdirs-4.2.2 virtualenv-20.26.2 virtualenvwrapper-win-1.2.7
+
+C:\Users\ACER>mkvirtualenv test
+ C:\Users\ACER\Envs is not a directory, creating
+created virtual environment CPython3.12.4.final.0-64 in 9812ms
+  creator CPython3Windows(dest=C:\Users\ACER\Envs\test, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\ACER\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==24.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+(test) C:\Users\ACER>pip install django
+Collecting django
+  Downloading Django-5.0.6-py3-none-any.whl.metadata (4.1 kB)
+Collecting asgiref<4,>=3.7.0 (from django)
+  Downloading asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Downloading sqlparse-0.5.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from django)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading Django-5.0.6-py3-none-any.whl (8.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.2/8.2 MB 4.3 MB/s eta 0:00:00
+Downloading asgiref-3.8.1-py3-none-any.whl (23 kB)
+Downloading sqlparse-0.5.0-py3-none-any.whl (43 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 2.1 MB/s eta 0:00:00
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 345.4/345.4 kB 7.3 MB/s eta 0:00:00
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.8.1 django-5.0.6 sqlparse-0.5.0 tzdata-2024.1
+
+(test) C:\Users\ACER>django-admin --version
+5.0.6
+
+(test) C:\Users\ACER>cd projects
+The system cannot find the path specified.
+
+(test) C:\Users\ACER>cd Projects
+The system cannot find the path specified.
+
+(test) C:\Users\ACER>cd Projects
+
+(test) C:\Users\ACER\Projects>django-admin startproject Ustav
+
+(test) C:\Users\ACER\Projects>dir
+ Volume in drive C is Acer
+ Volume Serial Number is EE77-9932
+
+ Directory of C:\Users\ACER\Projects
+
+16-06-2024  10:48    <DIR>          .
+16-06-2024  10:46    <DIR>          ..
+16-06-2024  10:48    <DIR>          Ustav
+               0 File(s)              0 bytes
+               3 Dir(s)  23,492,399,104 bytes free
+
+(test) C:\Users\ACER\Projects>python manage.py runserver
+C:\Users\ACER\AppData\Local\Programs\Python\Python312\python.exe: can't open file 'C:\\Users\\ACER\\Projects\\manage.py': [Errno 2] No such file or directory
+
+(test) C:\Users\ACER\Projects>cd ustav
+
+(test) C:\Users\ACER\Projects\Ustav>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 16, 2024 - 10:51:01
+Django version 5.0.6, using settings 'Ustav.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[16/Jun/2024 10:51:54] "GET / HTTP/1.1" 200 10629
+[16/Jun/2024 10:51:54] "GET / HTTP/1.1" 200 10629
+Not Found: /favicon.ico
+[16/Jun/2024 10:51:54] "GET /favicon.ico HTTP/1.1" 404 2109
